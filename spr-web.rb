@@ -5,21 +5,21 @@
 class SprWeb < Formula
   desc "Local web UI for managing stacked pull requests created with spr"
   homepage "https://github.com/gipcompany/spr-web"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gipcompany/spr-web/releases/download/v0.1.0/spr-web_0.1.0_darwin_amd64.tar.gz"
-      sha256 "10410928b8693e844718ad3391773a5de4f95acc6d669d900c504da834f971fb"
+      url "https://github.com/gipcompany/spr-web/releases/download/v0.2.0/spr-web_0.2.0_darwin_amd64.tar.gz"
+      sha256 "22a9c76e70713ad0b9b0efc38f2be59ee235ca34dab1fdb5a2547b64a43264a9"
 
       define_method(:install) do
         bin.install "spr-web"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gipcompany/spr-web/releases/download/v0.1.0/spr-web_0.1.0_darwin_arm64.tar.gz"
-      sha256 "af4185e2b83f8c735bdd45854c6646ccc857ea69dff12ef46efb323895d90eef"
+      url "https://github.com/gipcompany/spr-web/releases/download/v0.2.0/spr-web_0.2.0_darwin_arm64.tar.gz"
+      sha256 "1b5a7cf1cf489cccd10ed52b201e1af49ba0949db931a78945dcd3cf05808b3a"
 
       define_method(:install) do
         bin.install "spr-web"
@@ -29,15 +29,15 @@ class SprWeb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gipcompany/spr-web/releases/download/v0.1.0/spr-web_0.1.0_linux_amd64.tar.gz"
-      sha256 "f3df21c351ef558dac49feb3b3f00232867b398ceb1a1ffc75e7b616cf569698"
+      url "https://github.com/gipcompany/spr-web/releases/download/v0.2.0/spr-web_0.2.0_linux_amd64.tar.gz"
+      sha256 "7f245b6e801b2b92a93ac1335273e0fd027fccb474e8a5c83d25b81567c93a6d"
       define_method(:install) do
         bin.install "spr-web"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gipcompany/spr-web/releases/download/v0.1.0/spr-web_0.1.0_linux_arm64.tar.gz"
-      sha256 "7ce0e4c69cf7a28a6a8eeef186eaaa692df3254df4464d208708928ba62a536c"
+      url "https://github.com/gipcompany/spr-web/releases/download/v0.2.0/spr-web_0.2.0_linux_arm64.tar.gz"
+      sha256 "1101a673238eee90170adf43921a78baceff39d82e34d2e9649bddd706a369bf"
       define_method(:install) do
         bin.install "spr-web"
       end
